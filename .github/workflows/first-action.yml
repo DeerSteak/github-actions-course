@@ -8,5 +8,10 @@ jobs:
     steps: 
       - name: Print greeting
         run: echo "Hello, GitHub Actions!"
+      - name: Run multi-line thing
+        run: |
+          echo "Here's a directory structure"
+          ls
+          echo "there it was. See all the files."
       - name: Print goodbye
         run: echo "By y'all!"
